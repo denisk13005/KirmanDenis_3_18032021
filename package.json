@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "sass" : "sass --watch ./style.scss:./style.css",
-    "sass" : "sass --watch ./française.scss:.française.css"
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/denisk13005/KirmannDenis_3_18032021.git"
