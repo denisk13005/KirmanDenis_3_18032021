@@ -111,5 +111,60 @@ main {
 
 .localisation h2 {
   margin-top: 15px;
+  font-weight: bold;
+}
+
+.exploration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 285px;
+  background-color: #f6f6f6;
+}
+
+.exploration h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-top: 42px;
+  margin-right: 16px;
+}
+
+.exploration h1 span {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.exploration p {
+  margin-top: 16px;
+  text-align: center;
+  margin-left: 8px;
+  font-size: 17.5px;
+  font-weight: 100;
+}
+
+.exploration p span {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.exploration button {
+  height: 48px;
+  width: 218px;
+  margin-top: 32px;
+  border-radius: 50px;
+  font-size: 0.97em;
+  margin-left: 6px;
+  border: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e972da), to(#9d59dc));
+  background: linear-gradient(#e972da, #9d59dc);
 }
 /*# sourceMappingURL=style.css.map */
