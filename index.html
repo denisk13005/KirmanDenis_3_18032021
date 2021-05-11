@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"> 
+
     <title>Acceuil</title>
 </head>
 <body>
@@ -19,8 +20,7 @@
 
         <header>
             <div class="header">
-                <img src="Maquettes Ohmyfood\images\logo\ohmyfood.png" alt="logo du site">
-            </div>
+                <img src="MaquettesOhmyfood/images/logo/ohmyfood.png" alt="logo du site">            </div>
         </header>
 
         <div class="localisation">
@@ -29,10 +29,36 @@
         </div>
 
         <div class="exploration">
-            <h1>Réservez le menu qui </br><span>vous convient</span> </h1>
-            <p>Découvrez des restaurants    d'exception,</br><span>séléctionnés par nos soins.</span></p>
-            <button>Explorer nos restaurants</button>
+            <h1>Réservez le menu qui <br><span>vous convient</span> </h1>
+            <p>Découvrez des restaurants    d'exception,<br><span>séléctionnés par nos soins.</span></p>
+            <button><span>Explorer nos restaurants</span> </button>
         </div>
+
+        <section class="operation">
+            <h1>Fonctionnement</h1>
+            <div class="operation__btns">
+                <button class="operation__btn operation__btn--tel">
+                    <div class="operation__number">1</div>
+                    <div class="operation__icone operation__icone--tel"><i class="fas fa-mobile-alt"></i></div>
+                    <span>Choisissez un restaurant</span>
+                </button>
+
+                <button class="operation__btn operation__btn--menu">
+                    <div class="operation__number">2</div>
+                    <div class="operation__icone operation__icone--menu"><i class="fas fa-list-ul"></i></div>
+                    <span>Composez votre menu</span>
+
+                </button>
+
+                <button class="operation__btn operation__btn--shop">
+                    <div class="operation__number">3</div>
+                    <div class="operation__icone operation__icone--shop"><i class="fas fa-store "></i></div>
+                    <span>Dégustez au restaurant</span>
+                </button>
+            </div>
+        </section>
+
+
     </main>
 </body>
 </html>

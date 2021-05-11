@@ -1,0 +1,10 @@
+@mixin btnAcceuil{
+    background-color: #f3f3f3;
+    width: 325px ;
+    height: 75px;
+    box-shadow: $box-shadow;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 22px;
+    position: relative;
+}
