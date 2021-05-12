@@ -42,17 +42,51 @@ table {
 /*variables de couleurs*/
 /*map pour la police*/
 /*box shadow btn acceuil*/
-/*@keyframes spinner {
-    0%{transform: rotate(0turn);}   
-    100%{transform: rotate(1turn);}
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
 }
-@keyframes main{
-    0%{opacity: 0.1;}    
-    90%{ opacity: 0.1;}
-    100%{opacity:1 ;}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
 
+@-webkit-keyframes main {
+  0% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-*/
+
+@keyframes main {
+  0% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .spinner {
   width: 100%;
   height: 100vh;

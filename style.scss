@@ -1,7 +1,7 @@
 @import"base/reset";
 @import"utils/variables";
 @import"base/btnAcceuil";
-/*@keyframes spinner {
+@keyframes spinner {
     0%{transform: rotate(0turn);}   
     100%{transform: rotate(1turn);}
 }
@@ -11,7 +11,7 @@
     100%{opacity:1 ;}
 
 }
-*/
+
 .spinner {
     width: 100%;
     height: 100vh; 
