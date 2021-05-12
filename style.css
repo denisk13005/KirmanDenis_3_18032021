@@ -180,7 +180,7 @@ main {
   font-weight: 600;
 }
 
-.operation h1 {
+.operation h2 {
   margin-top: 52px;
   margin-left: 18px;
   font-size: 23.5px;
@@ -198,8 +198,8 @@ main {
 }
 
 .operation__btns {
-  margin-top: 30px;
-  margin-left: 10px;
+  margin-top: 31px;
+  margin-left: 11px;
 }
 
 .operation__btns .operation__btn {
@@ -234,7 +234,7 @@ main {
 }
 
 .operation__icone {
-  margin-left: 28px;
+  margin-left: 36px;
 }
 
 .operation__icone i {
@@ -252,7 +252,7 @@ main {
 
 .operation__icone--shop {
   font-size: 16.5px;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .operation__icone--shop .fa-store {
@@ -260,7 +260,8 @@ main {
 }
 
 .operation__btn span {
-  font-size: 16.5px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .operation__btn--tel span {
@@ -291,11 +292,11 @@ main {
   margin-top: 68px;
 }
 
-.restaurants h1 {
+.restaurants h2 {
   font-size: 23px;
   margin-top: 56px;
   margin-bottom: 28px;
-  margin-left: 20px;
+  margin-left: 2%;
   font-weight: bold;
 }
 
@@ -304,6 +305,13 @@ main {
   height: 252px;
   background-color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 4px 8px 8px #e5e5e5;
+          box-shadow: 4px 8px 8px #e5e5e5;
+  margin: auto;
+}
+
+.restaurantsThumbnail .imgContainer--note img {
+  height: 155%;
 }
 
 .imgContainer {
@@ -311,5 +319,14 @@ main {
   height: 176px;
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
+}
+
+.imgContainer img {
+  width: 336px;
+  height: 176px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 /*# sourceMappingURL=style.css.map */
