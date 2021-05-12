@@ -187,7 +187,7 @@ main {
   font-weight: bold;
 }
 
-.operation button {
+.operation .operation__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +202,7 @@ main {
   margin-left: 10px;
 }
 
-.operation__btns button {
+.operation__btns .operation__btn {
   background-color: #f3f3f3;
   width: 325px;
   height: 75px;
@@ -223,6 +223,7 @@ main {
   border-radius: 50%;
   width: 24px;
   height: 24px;
+  text-align: center;
   line-height: 28px;
   color: white;
   font-family: sans-serif;
@@ -265,7 +266,6 @@ main {
 .operation__btn--tel span {
   margin-left: 26px;
   margin-top: 2px;
-  font-weight: 00;
 }
 
 .operation__btn--menu span {
@@ -276,5 +276,40 @@ main {
 .operation__btn--shop span {
   margin-left: 20px;
   margin-top: 6px;
+}
+
+.restaurants {
+  height: 1228px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f6f6f6;
+  margin-top: 68px;
+}
+
+.restaurants h1 {
+  font-size: 23px;
+  margin-top: 56px;
+  margin-bottom: 28px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.restaurantsThumbnail {
+  width: 336px;
+  height: 252px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.imgContainer {
+  width: 336px;
+  height: 176px;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

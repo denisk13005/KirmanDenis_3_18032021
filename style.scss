@@ -126,7 +126,7 @@ main{
         font-size: 23.5px;
         font-weight:bold;
     }
-    button{
+    .operation__btn{
         display: flex;
         align-items: center;
         margin: auto;
@@ -136,7 +136,7 @@ main{
 .operation__btns{
     margin-top: 30px;
     margin-left: 10px;
-    button{
+    .operation__btn{
         @include btnAcceuil;
     }
     .operation__btn--shop{
@@ -148,6 +148,7 @@ main{
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    text-align: center;
     line-height: 28px;
     color: white;
     font-family: sans-serif;
@@ -200,4 +201,30 @@ main{
             margin-top: 6px;
         }
     }
+}
+.restaurants{
+    height: 1228px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6 ;
+    margin-top: 68px;
+    h1{
+        font-size: 23px;
+        margin-top: 56px;
+        margin-bottom: 28px;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+}
+.restaurantsThumbnail{
+    width: 336px;
+    height: 252px;
+    background-color: white;
+    border-radius: 20px;
+}
+.imgContainer{
+    width: 336px;
+    height: 176px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
 }
