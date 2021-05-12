@@ -212,19 +212,23 @@ main{
     margin-top: 68px;
     h2{
         font-size: 23px;
-        margin-top: 56px;
-        margin-bottom: 28px;
-        margin-left: 2%;
+        padding-top: 54px;
+        margin-left: 20px;
         font-weight: bold;
+        margin-bottom: 23px;
+        border: 1px solid red;
     }
 }
-.restaurantsThumbnail{
+.restaurants__thumbnail{
     width: 336px;
     height: 252px;
     background-color: white;
     border-radius: 20px;
     box-shadow: $box-shadow;
-    margin: auto;
+    margin: auto; 
+    margin-top: 0;
+    margin-bottom: 18px;  
+    position: relative;
     .imgContainer{
         &--note{
             img{         
@@ -244,5 +248,34 @@ main{
         object-fit: cover;
         object-position:bottom;
     }
+    .new{
+        width: 81px;
+        height: 29px;
+        text-align: center;
+        line-height: 29px;
+        color:#139273;
+        background-color:#99e2d0 ;        
+        position: absolute;
+        top: 13px;
+        right: 12px;
+        font-size: 13px;
+        font-weight: bold;
+    }
     
+}
+.restaurants__info{
+    display: flex;
+    justify-content: space-between;
+}
+.restaurants__name{    
+    h3{
+        margin-top: 18px;
+        margin-left: 14px;
+        font-size: 17.5px;
+        font-weight: bold;
+    }
+    p{
+        margin-top: 8px;
+        margin-left: 14px;
+    }
 }

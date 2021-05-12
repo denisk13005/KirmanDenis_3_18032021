@@ -294,13 +294,14 @@ main {
 
 .restaurants h2 {
   font-size: 23px;
-  margin-top: 56px;
-  margin-bottom: 28px;
-  margin-left: 2%;
+  padding-top: 54px;
+  margin-left: 20px;
   font-weight: bold;
+  margin-bottom: 23px;
+  border: 1px solid red;
 }
 
-.restaurantsThumbnail {
+.restaurants__thumbnail {
   width: 336px;
   height: 252px;
   background-color: white;
@@ -308,9 +309,12 @@ main {
   -webkit-box-shadow: 4px 8px 8px #e5e5e5;
           box-shadow: 4px 8px 8px #e5e5e5;
   margin: auto;
+  margin-top: 0;
+  margin-bottom: 18px;
+  position: relative;
 }
 
-.restaurantsThumbnail .imgContainer--note img {
+.restaurants__thumbnail .imgContainer--note img {
   height: 155%;
 }
 
@@ -328,5 +332,40 @@ main {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+}
+
+.imgContainer .new {
+  width: 81px;
+  height: 29px;
+  text-align: center;
+  line-height: 29px;
+  color: #139273;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.restaurants__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurants__name h3 {
+  margin-top: 18px;
+  margin-left: 14px;
+  font-size: 17.5px;
+  font-weight: bold;
+}
+
+.restaurants__name p {
+  margin-top: 8px;
+  margin-left: 14px;
 }
 /*# sourceMappingURL=style.css.map */
