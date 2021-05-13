@@ -384,12 +384,24 @@ main {
   height: 155%;
 }
 
+.restaurants__thumbnail .heart__color {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 24px;
+  bottom: 33px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 .restaurants__thumbnail .heart {
   width: 20px;
   height: 20px;
   position: absolute;
   right: 24px;
   bottom: 33px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .restaurants__thumbnail .heart:active {
@@ -404,16 +416,6 @@ main {
           animation: heart__color 1s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-
-.restaurants__thumbnail .heart__color {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 24px;
-  bottom: 33px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 .imgContainer {

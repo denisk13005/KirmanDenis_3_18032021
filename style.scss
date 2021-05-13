@@ -13,8 +13,8 @@
 }
 */
 @keyframes heart__color{
-    0%{transform: scale(0); }
-    100%{transform: scale(1);}
+    0%{transform: scale(0);}
+    100%{transform: scale(1); }
 }
 @keyframes heart{
     0%{transform: scale(1);}
@@ -264,12 +264,23 @@ main{
             }
         }
     }
+    .heart__color{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 24px;
+        bottom: 33px;
+        transform: scale(0);
+        
+        
+    }
     .heart{
         width: 20px;
         height: 20px;
         position: absolute;
         right: 24px;
         bottom: 33px;
+        transform: scale(1);
         &:active{
             animation: heart 1s 1s ease-in-out ;
             animation-fill-mode: forwards;
@@ -281,14 +292,7 @@ main{
             }
         }
     }
-    .heart__color{
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        right: 24px;
-        bottom: 33px;
-        transform: scale(0);
-    }
+    
 }
 .imgContainer{
     width: 336px;
