@@ -242,9 +242,24 @@ main {
   font-weight: 600;
 }
 
+.operation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .operation h2 {
   margin-top: 52px;
-  margin-left: 18px;
+  margin-right: 178px;
   font-size: 23.5px;
   font-weight: bold;
 }
@@ -260,6 +275,11 @@ main {
 }
 
 .operation__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 31px;
   margin-left: 11px;
 }
@@ -402,6 +422,15 @@ main {
           transform: scale(0);
 }
 
+.restaurants__thumbnail .heart__color:checked {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
 .restaurants__thumbnail .heart {
   width: 20px;
   height: 20px;
@@ -412,18 +441,14 @@ main {
           transform: scale(1);
 }
 
-.restaurants__thumbnail .heart:active {
-  -webkit-animation: heart 1s 1s ease-in-out;
-          animation: heart 1s 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.restaurants__thumbnail .heart:hover {
+  -webkit-animation: heart 1s 1s ease-in-out forwards;
+          animation: heart 1s 1s ease-in-out forwards;
 }
 
-.restaurants__thumbnail .heart:active + .heart__color {
-  -webkit-animation: heart__color 1s ease-in-out;
-          animation: heart__color 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.restaurants__thumbnail .heart:hover + .heart__color {
+  -webkit-animation: heart__color 1s ease-in-out forwards;
+          animation: heart__color 1s ease-in-out forwards;
 }
 
 .imgContainer {

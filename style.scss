@@ -144,9 +144,14 @@ main{
 
 
 .operation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
     h2{
         margin-top: 52px;
-        margin-left: 18px;
+        margin-right: 178px;
         font-size: 23.5px;
         font-weight:bold;
     }
@@ -158,6 +163,8 @@ main{
 
 }
 .operation__btns{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 31px;
     margin-left: 11px;
     .operation__btn{
@@ -275,6 +282,11 @@ main{
         right: 24px;
         bottom: 33px;
         transform: scale(0);
+        &:checked {
+            transform: scale(1);
+            transition: transform 1s ease-in-out;
+        }             
+        
         
         
     }
@@ -285,15 +297,13 @@ main{
         right: 24px;
         bottom: 33px;
         transform: scale(1);
-        &:active{
-            animation: heart 1s 1s ease-in-out ;
-            animation-fill-mode: forwards;
+        &:hover{
+            animation: heart 1s 1s ease-in-out forwards;
             & + .heart__color{
-                animation: heart__color 1s ease-in-out ;
-                animation-fill-mode: forwards;
-                             
-                
+                animation: heart__color 1s ease-in-out forwards ;
+               
             }
+           
         }
     }
     
