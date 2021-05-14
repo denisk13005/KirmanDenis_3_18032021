@@ -98,12 +98,12 @@ table {
 
 @font-face {
   font-family: "Roboto";
-  src: url("/police/Roboto-Regular.ttf");
+  src: url("police/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto-Thin";
-  src: url(/police/Roboto-Thin.ttf);
+  src: url(police/Roboto-Thin.ttf);
 }
 
 .error {
