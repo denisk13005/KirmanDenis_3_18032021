@@ -294,6 +294,7 @@ main{
         right: 24px;
         bottom: 33px;
         transform: scale(1);
+        cursor: pointer;
         &:hover{
             animation: heart 1s 1s ease-in-out forwards;
             & + .heart__color{
