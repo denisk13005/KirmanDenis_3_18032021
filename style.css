@@ -139,6 +139,8 @@ main {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
+  max-width: 1920px;
+  margin: auto;
 }
 
 .header {
@@ -244,7 +246,7 @@ main {
 
 .operation h2 {
   margin-top: 52px;
-  margin-left: 18px;
+  margin-left: 21px;
   font-size: 23.5px;
   font-weight: bold;
 }
@@ -260,6 +262,11 @@ main {
 }
 
 .operation__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 31px;
   margin-left: 11px;
 }
@@ -342,7 +349,7 @@ main {
 }
 
 .restaurants {
-  height: 1228px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,6 +359,14 @@ main {
           flex-direction: column;
   background-color: #f6f6f6;
   margin-top: 68px;
+}
+
+.restaurants__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .restaurants a {
@@ -394,6 +409,15 @@ main {
           transform: scale(0);
 }
 
+.restaurants__thumbnail .heart__color:checked {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
 .restaurants__thumbnail .heart {
   width: 20px;
   height: 20px;
@@ -404,18 +428,14 @@ main {
           transform: scale(1);
 }
 
-.restaurants__thumbnail .heart:active {
-  -webkit-animation: heart 1s 1s ease-in-out;
-          animation: heart 1s 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.restaurants__thumbnail .heart:hover {
+  -webkit-animation: heart 1s 1s ease-in-out forwards;
+          animation: heart 1s 1s ease-in-out forwards;
 }
 
-.restaurants__thumbnail .heart:active + .heart__color {
-  -webkit-animation: heart__color 1s ease-in-out;
-          animation: heart__color 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.restaurants__thumbnail .heart:hover + .heart__color {
+  -webkit-animation: heart__color 1s ease-in-out forwards;
+          animation: heart__color 1s ease-in-out forwards;
 }
 
 .imgContainer {
@@ -513,7 +533,7 @@ footer a {
 }
 
 footer .propose {
-  margin-top: 26px;
+  margin-top: 14px;
   margin-left: 25px;
 }
 
@@ -525,5 +545,18 @@ footer .partner {
 footer p {
   margin-top: 14px;
   margin-left: 25px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 12px;
 }
 /*# sourceMappingURL=style.css.map */

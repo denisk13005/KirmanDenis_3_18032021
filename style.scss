@@ -56,6 +56,8 @@ main{
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .header {    
@@ -145,8 +147,8 @@ main{
 
 .operation{
     h2{
-        margin-top: 52px;
-        margin-left: 18px;
+        margin-top: 52px; 
+        margin-left: 21px;      
         font-size: 23.5px;
         font-weight:bold;
     }
@@ -158,6 +160,8 @@ main{
 
 }
 .operation__btns{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 31px;
     margin-left: 11px;
     .operation__btn{
@@ -229,11 +233,15 @@ main{
     }
 }
 .restaurants{
-    height: 1228px;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6 ;
     margin-top: 68px;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
     a{
         text-decoration: none;
         color: black;
@@ -271,6 +279,11 @@ main{
         right: 24px;
         bottom: 33px;
         transform: scale(0);
+        &:checked {
+            transform: scale(1);
+            transition: transform 1s ease-in-out;
+        }             
+        
         
         
     }
@@ -281,15 +294,13 @@ main{
         right: 24px;
         bottom: 33px;
         transform: scale(1);
-        &:active{
-            animation: heart 1s 1s ease-in-out ;
-            animation-fill-mode: forwards;
+        &:hover{
+            animation: heart 1s 1s ease-in-out forwards;
             & + .heart__color{
-                animation: heart__color 1s ease-in-out ;
-                animation-fill-mode: forwards;
-                             
-                
+                animation: heart__color 1s ease-in-out forwards ;
+               
             }
+           
         }
     }
     
@@ -358,7 +369,7 @@ footer{
     height: 198px;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     svg{        
         padding-top: 26px;
         padding-left: 25px;        
@@ -368,8 +379,8 @@ footer{
         color: white;
         width: max-content;
     }
-    .propose{
-        margin-top: 26px;
+    .propose{  
+        margin-top: 14px;      
         margin-left: 25px;
     }
     .partner{
@@ -382,4 +393,10 @@ footer{
         
         
     }
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 12px;
 }
