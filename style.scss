@@ -56,6 +56,8 @@ main{
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .header {    
@@ -144,14 +146,8 @@ main{
 
 
 .operation{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    
     h2{
-        margin-top: 52px;
-        margin-right: 178px;
+        margin-top: 52px;        
         font-size: 23.5px;
         font-weight:bold;
     }
@@ -372,7 +368,7 @@ footer{
     height: 198px;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     svg{        
         padding-top: 26px;
         padding-left: 25px;        
@@ -382,8 +378,8 @@ footer{
         color: white;
         width: max-content;
     }
-    .propose{
-        margin-top: 26px;
+    .propose{  
+        margin-top: 14px;      
         margin-left: 25px;
     }
     .partner{
@@ -396,4 +392,10 @@ footer{
         
         
     }
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 12px;
 }
