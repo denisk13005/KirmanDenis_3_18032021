@@ -442,15 +442,6 @@ main {
           transform: scale(0);
 }
 
-.restaurants__thumbnail .heart__color:checked {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-}
-
 .restaurants__thumbnail .heart {
   width: 20px;
   height: 20px;
@@ -463,13 +454,13 @@ main {
 }
 
 .restaurants__thumbnail .heart:hover {
-  -webkit-animation: heart 1s 1s ease-in-out both;
-          animation: heart 1s 1s ease-in-out both;
+  -webkit-animation: heart .5s .5s ease-in-out both;
+          animation: heart .5s .5s ease-in-out both;
 }
 
 .restaurants__thumbnail .heart:hover + .heart__color {
-  -webkit-animation: heart__color 1s ease-in-out both;
-          animation: heart__color 1s ease-in-out both;
+  -webkit-animation: heart__color .5s ease-in-out both;
+          animation: heart__color .5s ease-in-out both;
 }
 
 .imgContainer {
