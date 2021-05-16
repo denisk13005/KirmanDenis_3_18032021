@@ -2,6 +2,7 @@
 $color-primary : #9356DC;
 $color-secondary : #FF79DA;
 $color-tertiary : #99E2D0;
+$gradient : linear-gradient($color-secondary,$color-primary);
 
 /*map pour la police*/
 $font-family :(texte:"Roboto", titres:"Shrikhand");
