@@ -90,7 +90,6 @@ section {
   background: #f6f6f6;
   position: relative;
   bottom: 32px;
-  border: 1px solid yellow;
 }
 
 /*variables de couleurs*/
@@ -185,6 +184,30 @@ button span {
   font-weight: 600;
 }
 
+@-webkit-keyframes appearance {
+  0% {
+    opacity: 0%;
+  }
+  95% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0%;
+  }
+  95% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 .menu__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,6 +255,24 @@ button span {
   overflow: hidden;
 }
 
+.menu__btn--entrance {
+  opacity: 0;
+  -webkit-animation: appearance .5s ease-in-out forwards;
+          animation: appearance .5s ease-in-out forwards;
+}
+
+.menu__btn--dish {
+  opacity: 0;
+  -webkit-animation: appearance .5s .5s  ease-in-out forwards;
+          animation: appearance .5s .5s  ease-in-out forwards;
+}
+
+.menu__btn--desserts {
+  opacity: 0;
+  -webkit-animation: appearance .5s 1s ease-in-out forwards;
+          animation: appearance .5s 1s ease-in-out forwards;
+}
+
 .menu__btn--title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,19 +318,19 @@ button span {
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-.menu__btn:not(:hover) > .menu__btn--title > .menu__btn--price {
-  margin-right: 0px;
-  -webkit-transition: margin-right    1s ease-in-out;
-  transition: margin-right    1s ease-in-out;
+.menu__btn:not(:hover) .menu__btn--title > .menu__btn--price {
+  margin-right: 0;
+  -webkit-transition: margin-right 1s ease-in-out;
+  transition: margin-right 1s ease-in-out;
 }
 
-.menu__btn:not(:hover) > .menu__btn--title > .menu__btn--price .coche i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+.menu__btn:not(:hover) .menu__btn--title > .menu__btn--price .coche i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in-out paused;
+  transition: -webkit-transform 1s ease-in-out paused;
+  transition: transform 1s ease-in-out paused;
+  transition: transform 1s ease-in-out paused, -webkit-transform 1s ease-in-out paused;
 }
 
 .menu__btn--price {
@@ -328,11 +369,10 @@ button {
   width: 184px;
   margin: auto;
   margin-top: 50px;
-  border: 1px solid red;
   margin-bottom: 84px;
 }
 
 footer {
-  padding-bottom: -32px;
+  margin-top: -32px;
 }
 /*# sourceMappingURL=française.css.map */
