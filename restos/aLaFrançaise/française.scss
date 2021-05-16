@@ -2,7 +2,6 @@
 @import"../../base/headerResto";
 @import"../../utils/cocheAnimation";
 @import"../../base/pictures";
-@import"../../base/sectionRestos";
 @import"../../utils/variables";
 @import"../../base/polices";
 @import"../../base/footer";
@@ -10,7 +9,14 @@
 @import"../../base/btnGradient";
 @import"../../utils/tempo";
 @import"../../utils/appearance";
-
+section{
+    font-family: Roboto;
+    height:100%;
+    border-radius: 40px 40px 0px 0px;
+    background: #f6f6f6;
+    position: relative;
+    bottom: 32px;
+}
 .menu__header{  
     display: flex;
     justify-content: space-between;
@@ -126,9 +132,7 @@ button{
     width:184px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 84px;
 }
-
 footer{
     margin-top: -32px;
 }
