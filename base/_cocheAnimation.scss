@@ -1,0 +1,8 @@
+@mixin animation{
+    margin-right: 58px;
+    transition: margin-right    1s ease-in-out;
+    .coche i{
+        transform: rotate(-360deg);
+        transition: transform 1s ease-in-out;
+    }
+}
