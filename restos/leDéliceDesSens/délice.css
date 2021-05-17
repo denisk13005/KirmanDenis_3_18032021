@@ -40,7 +40,6 @@ table {
 }
 
 /*variables de couleurs*/
-/*map pour la police*/
 /*box shadow btn acceuil*/
 @font-face {
   font-family: "Roboto";
@@ -114,7 +113,6 @@ footer p {
 }
 
 /*variables de couleurs*/
-/*map pour la police*/
 /*box shadow btn acceuil*/
 button {
   height: 50px;
@@ -387,6 +385,6 @@ button {
   width: 184px;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 82px;
+  margin-bottom: 51px;
 }
 /*# sourceMappingURL=délice.css.map */

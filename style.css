@@ -40,10 +40,8 @@ table {
 }
 
 /*variables de couleurs*/
-/*map pour la police*/
 /*box shadow btn acceuil*/
 /*variables de couleurs*/
-/*map pour la police*/
 /*box shadow btn acceuil*/
 button {
   height: 50px;
@@ -208,6 +206,7 @@ main {
   margin: 0;
   padding: 0;
   max-width: 1920px;
+  height: auto;
   margin: auto;
 }
 
