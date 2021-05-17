@@ -168,6 +168,21 @@ button span {
   }
 }
 
+@media (min-width: 475px) {
+  header {
+    position: relative;
+  }
+  header .logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  header .logo img {
+    width: 70%;
+  }
+}
+
 body {
   background-color: #f6f6f6;
 }

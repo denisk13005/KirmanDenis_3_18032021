@@ -1,0 +1,13 @@
+@media(min-width:475px){
+  header{
+      position: relative;
+      .logo{
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          img{
+              width: 70%;
+          }
+      }
+  }
+}
