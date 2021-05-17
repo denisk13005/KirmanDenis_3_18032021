@@ -113,16 +113,30 @@ footer p {
   margin-top: 12px;
 }
 
+/*variables de couleurs*/
+/*map pour la police*/
+/*box shadow btn acceuil*/
 button {
   height: 50px;
   width: 218px;
   margin-top: 32px;
   border-radius: 50px;
+  -webkit-box-shadow: 2px 2px 10px grey;
+          box-shadow: 2px 2px 10px grey;
   margin-left: 6px;
   border: none;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e972da), to(#9d59dc));
-  background: linear-gradient(#e972da, #9d59dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+  position: relative;
+}
+
+button:hover {
+  opacity: 0.85;
+  scale: 1.01;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
 }
 
 button span {
