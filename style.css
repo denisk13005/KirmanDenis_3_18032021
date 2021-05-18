@@ -182,6 +182,17 @@ button span {
   width: 100%;
   height: 100vh;
   position: fixed;
+  border: 4px solid #f2f2f2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: spinner  0.9s ease-in-out 3 alternate;
+          animation: spinner  0.9s ease-in-out 3 alternate;
 }
 
 .spinner::after {
@@ -193,7 +204,8 @@ button span {
   height: 50px;
   border-radius: 50px;
   border: 4px solid transparent;
-  border-top: 4px solid blue;
+  border-top: 4px solid #9356DC;
+  border-bottom: 4px solid #FF79DA;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-animation: spinner 0.9s ease-in-out 3 alternate;
@@ -477,14 +489,14 @@ main {
   cursor: pointer;
 }
 
-.restaurants__thumbnail .heart:hover {
-  -webkit-animation: heart .5s .5s ease-in-out both;
-          animation: heart .5s .5s ease-in-out both;
+.restaurants__thumbnail .heart:active {
+  -webkit-animation: heart 1s 1s ease-in-out both;
+          animation: heart 1s 1s ease-in-out both;
 }
 
-.restaurants__thumbnail .heart:hover + .heart__color {
-  -webkit-animation: heart__color .5s ease-in-out both;
-          animation: heart__color .5s ease-in-out both;
+.restaurants__thumbnail .heart:active + .heart__color {
+  -webkit-animation: heart__color 1s ease-in-out both;
+          animation: heart__color 1s ease-in-out both;
 }
 
 .imgContainer {
