@@ -168,23 +168,6 @@ button span {
   }
 }
 
-@media (min-width: 668px) {
-  header {
-    position: relative;
-    height: 11vh;
-  }
-  header .logo {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    margin-bottom: 10px;
-  }
-  header .logo img {
-    width: 340px;
-  }
-}
-
 @-webkit-keyframes heart__color {
   0% {
     -webkit-transform: scale(0);
@@ -235,33 +218,43 @@ body {
 
 header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 9.5vh;
   -webkit-box-shadow: 0px 2px 5px grey;
           box-shadow: 0px 2px 5px grey;
+  height: 100%;
+  position: relative;
 }
 
-header img {
-  width: 49%;
-  margin-top: 0.8em;
-  margin-right: 2.6em;
+header .fleche {
+  position: absolute;
+  top: 24px;
+  left: 22px;
 }
 
-.fleche {
-  font-size: 1.3em;
-  font-weight: bold;
-  padding-left: 1.1em;
-  padding-top: 0.4em;
-}
-
-.fleche a {
+header .fleche i {
   color: black;
+  font-size: 20px;
+}
+
+header .logo {
+  position: relative;
+  left: 42px;
+  width: 165px;
+  height: 42px;
+  margin-left: 17%;
+  padding-right: 30px;
+  padding-top: 19px;
+}
+
+@media (min-width: 600px) {
+  header .logo {
+    margin: auto;
+    width: 200px;
+  }
+}
+
+header .logo img {
+  width: 100%;
 }
 
 .picture {
@@ -401,6 +394,7 @@ section {
   font-size: 15px;
   margin-top: 6px;
   margin-left: 2px;
+  padding-bottom: 2px;
 }
 
 .menu__btn:hover > .menu__btn--title > .menu__btn--price {
