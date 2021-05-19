@@ -270,6 +270,13 @@ header .logo img {
      object-fit: cover;
 }
 
+@media (min-width: 600px) {
+  .picture img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
 section {
   font-family: Roboto;
   height: 100%;
@@ -277,6 +284,19 @@ section {
   background: #f6f6f6;
   position: relative;
   bottom: 32px;
+}
+
+@media (min-width: 600px) {
+  section {
+    margin: auto;
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1080px) {
+  section {
+    max-width: 100%;
+  }
 }
 
 .menu__header {
@@ -321,6 +341,17 @@ section {
   top: 37px;
   -webkit-transform: scale(0);
           transform: scale(0);
+}
+
+@media (min-width: 1080px) {
+  .restos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid red;
+  }
 }
 
 .menu__title {

@@ -59,6 +59,9 @@ header {
     width: 100%;
     height: 110%;       
     object-fit: cover;
+    @media(min-width:600px){
+        object-fit:fill;
+    }
     }
 }
 section{
@@ -68,6 +71,13 @@ section{
     background: #f6f6f6;
     position: relative;
     bottom: 32px;
+    @media(min-width: 600px ){
+        margin: auto;
+        max-width: 600px;
+    }
+    @media(min-width:1080px){
+        max-width: 100%;
+    }
 }
 .menu__header{  
     display: flex;
@@ -103,6 +113,13 @@ section{
         transform: scale(0);
     }
     
+}
+.restos{
+    @media(min-width:1080px){
+        display:flex;
+        justify-content: space-around;
+        border: 1px solid red;
+}
 }
 .menu__title{
     margin-top: 36px;
