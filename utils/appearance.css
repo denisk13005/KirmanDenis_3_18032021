@@ -1,23 +1,25 @@
 @-webkit-keyframes appearance {
   0% {
     opacity: 0%;
-  }
-  80% {
-    opacity: 0%;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   100% {
     opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 @keyframes appearance {
   0% {
     opacity: 0%;
-  }
-  80% {
-    opacity: 0%;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   100% {
     opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 /*# sourceMappingURL=appearance.css.map */
