@@ -118,20 +118,28 @@ section{
     @media(min-width:1080px){
         display:flex;
         justify-content: space-around;
-        border: 1px solid red;
 }
 }
 .entrance{
     opacity: 0;
     animation: appearance 1s ease-in-out forwards;
+    @media(min-width:1080px){
+        width: 33%;
+    }
 }
-.dish{
+.dish{    
     opacity: 0; 
     animation: appearance 1s .5s ease-in-out forwards;
+    @media(min-width:1080px){
+        width: 33%;
+    }
 }
 .desserts{
     opacity: 0;    
     animation: appearance 1s 1s ease-in-out forwards;
+    @media(min-width:1080px){
+        width: 33%;
+    }
 }
 
 .menu__title{
@@ -153,20 +161,7 @@ section{
     border-radius: 15px;
     background-color: white;
     box-shadow: 1px 3px 5px #e9e9e9;
-    overflow: hidden;   
-    /*&--entrance{
-        opacity: 0;
-        animation: appearance .5s ease-in-out forwards;
-    }  
-    &--dish{
-        opacity: 0;
-        animation: appearance .5s .5s  ease-in-out forwards;
-    }
-    &--desserts{
-        opacity: 0;
-        animation: appearance .5s 1s ease-in-out forwards;
-
-    }*/
+    overflow: hidden;     
     &--title{
         display: flex;
         width: 100%;
@@ -177,8 +172,7 @@ section{
             overflow: hidden;
             margin-top: 15px;
             margin-left: 10px;
-            font-size: 18px;
-            
+            font-size: 18px;            
             span{
                 text-overflow: ellipsis;
                 white-space: nowrap;
