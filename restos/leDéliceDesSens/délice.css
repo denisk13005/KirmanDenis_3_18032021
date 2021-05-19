@@ -39,6 +39,64 @@ table {
   border-spacing: 0;
 }
 
+@-webkit-keyframes reverseAnimation {
+  0% {
+    margin-right: 58px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@keyframes reverseAnimation {
+  0% {
+    margin-right: 58px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@-webkit-keyframes animation {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 58px;
+  }
+}
+
+@keyframes animation {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 58px;
+  }
+}
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 /*variables de couleurs*/
 /*box shadow btn acceuil*/
 @font-face {
@@ -352,7 +410,6 @@ section {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    border: 1px solid red;
   }
 }
 
@@ -362,16 +419,34 @@ section {
           animation: appearance 1s ease-in-out forwards;
 }
 
+@media (min-width: 1080px) {
+  .entrance {
+    width: 33%;
+  }
+}
+
 .dish {
   opacity: 0;
   -webkit-animation: appearance 1s .5s ease-in-out forwards;
           animation: appearance 1s .5s ease-in-out forwards;
 }
 
+@media (min-width: 1080px) {
+  .dish {
+    width: 33%;
+  }
+}
+
 .desserts {
   opacity: 0;
   -webkit-animation: appearance 1s 1s ease-in-out forwards;
           animation: appearance 1s 1s ease-in-out forwards;
+}
+
+@media (min-width: 1080px) {
+  .desserts {
+    width: 33%;
+  }
 }
 
 .menu__title {
@@ -431,33 +506,13 @@ section {
 }
 
 .menu__btn:hover > .menu__btn--title > .menu__btn--price {
-  margin-right: 58px;
-  -webkit-transition: margin-right    .7s ease-in-out;
-  transition: margin-right    .7s ease-in-out;
-}
-
-.menu__btn:hover > .menu__btn--title > .menu__btn--price .coche i {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-  -webkit-transition: -webkit-transform .7s ease-in-out;
-  transition: -webkit-transform .7s ease-in-out;
-  transition: transform .7s ease-in-out;
-  transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+  -webkit-animation: animation 1s ease-in-out forwards;
+          animation: animation 1s ease-in-out forwards;
 }
 
 .menu__btn:not(:hover) .menu__btn--title > .menu__btn--price {
-  margin-right: 0;
-  -webkit-transition: margin-right .7s ease-in-out;
-  transition: margin-right .7s ease-in-out;
-}
-
-.menu__btn:not(:hover) .menu__btn--title > .menu__btn--price .coche i {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: -webkit-transform .7s ease-in-out paused;
-  transition: -webkit-transform .7s ease-in-out paused;
-  transition: transform .7s ease-in-out paused;
-  transition: transform .7s ease-in-out paused, -webkit-transform .7s ease-in-out paused;
+  -webkit-animation: reverseAnimation 1s ease-in-out forwards;
+          animation: reverseAnimation 1s ease-in-out forwards;
 }
 
 .menu__btn--price {

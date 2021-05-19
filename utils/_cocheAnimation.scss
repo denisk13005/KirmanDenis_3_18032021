@@ -1,16 +1,25 @@
-@mixin animation{
-    margin-right: 58px;
-    transition: margin-right    .7s ease-in-out;
-    .coche i{
-        transform: rotate(-360deg);
-        transition: transform .7s ease-in-out ;
+
+@keyframes reverseAnimation{
+    0%{
+        margin-right: 58px;
+    }
+    100%{
+        margin-right: 0px;
     }
 }
-@mixin reverseAnimation{
-    margin-right: 0;
-    transition: margin-right .7s ease-in-out;
-    .coche i{
+@keyframes animation{
+    0%{
+        margin-right: 0px;        
+    }
+    100%{
+        margin-right: 58px;
+    }
+}
+@keyframes turn{
+    0%{
         transform: rotate(0deg);
-        transition: transform .7s ease-in-out paused;
+    }
+    100%{
+        transform: rotate(-360deg);
     }
 }

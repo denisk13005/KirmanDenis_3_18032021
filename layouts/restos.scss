@@ -122,21 +122,21 @@ section{
 }
 .entrance{
     opacity: 0;
-    animation: appearance 1s ease-in-out forwards;
+    animation: appearance 1s .3s ease-in-out forwards;
     @media(min-width:1080px){
         width: 33%;
     }
 }
 .dish{    
     opacity: 0; 
-    animation: appearance 1s .5s ease-in-out forwards;
+    animation: appearance 1s .6s ease-in-out forwards;
     @media(min-width:1080px){
         width: 33%;
     }
 }
 .desserts{
     opacity: 0;    
-    animation: appearance 1s 1s ease-in-out forwards;
+    animation: appearance 1s .9s ease-in-out forwards;
     @media(min-width:1080px){
         width: 33%;
     }
@@ -188,10 +188,14 @@ section{
         
     }
     &:hover > &--title > &--price{
-       @include animation;
+       animation: animation .5s ease-in-out forwards;
+        > .coche i{
+            animation: turn .5s ease-in-out;
+        }       
     }
     &:not(:hover) &--title > &--price{
-        @include reverseAnimation;
+        animation: reverseAnimation .5s ease-in-out both;
+        
     }
     
     &--price{
