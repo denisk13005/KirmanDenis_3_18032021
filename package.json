@@ -1,7 +1,7 @@
 {
   "name": "projet3",
   "version": "1.0.0",
-  "description": "",
+  "description": "site de réservation de plats gastronomique",
   "main": "index.js",
   
   "repository": {
