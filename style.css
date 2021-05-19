@@ -214,6 +214,7 @@ main {
   -webkit-animation: main 3s ease-in-out;
           animation: main 3s ease-in-out;
   font-family: Roboto, sans-serif;
+  width: 100%;
   margin: 0;
   padding: 0;
   max-width: 1920px;
