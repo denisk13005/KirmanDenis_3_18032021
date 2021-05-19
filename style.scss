@@ -285,7 +285,7 @@ main{
         bottom: 33px;
         transform: scale(1);
         cursor: pointer;
-        &:active{
+        &:hover{
             animation: heart 1s 1s ease-in-out both;
             & + .heart__color{
                 animation: heart__color 1s ease-in-out both ;

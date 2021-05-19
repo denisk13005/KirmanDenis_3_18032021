@@ -498,12 +498,12 @@ main {
   cursor: pointer;
 }
 
-.restaurants__thumbnail .heart:active {
+.restaurants__thumbnail .heart:hover {
   -webkit-animation: heart 1s 1s ease-in-out both;
           animation: heart 1s 1s ease-in-out both;
 }
 
-.restaurants__thumbnail .heart:active + .heart__color {
+.restaurants__thumbnail .heart:hover + .heart__color {
   -webkit-animation: heart__color 1s ease-in-out both;
           animation: heart__color 1s ease-in-out both;
 }
