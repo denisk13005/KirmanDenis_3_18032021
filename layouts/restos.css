@@ -205,8 +205,8 @@ button span {
 @-webkit-keyframes appearance {
   0% {
     opacity: 0%;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   100% {
     opacity: 100%;
@@ -218,8 +218,8 @@ button span {
 @keyframes appearance {
   0% {
     opacity: 0%;
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   100% {
     opacity: 100%;
