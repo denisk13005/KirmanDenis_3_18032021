@@ -377,6 +377,7 @@ section {
 }
 
 .menu__header img {
+  cursor: pointer;
   width: 23px;
   padding-right: 37px;
   padding-bottom: 2px;
