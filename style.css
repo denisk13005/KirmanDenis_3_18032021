@@ -73,52 +73,106 @@ button span {
   font-weight: 600;
 }
 
-@-webkit-keyframes spinner {
+@font-face {
+  font-family: "Roboto";
+  src: url(/police/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(/police/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../../police/Shrikhand-Regular.ttf);
+}
+
+/*** coche keyframe ***/
+@-webkit-keyframes reverseAnimation {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0turn);
-            transform: translate(-50%, -50%) rotate(0turn);
+    margin-right: 58px;
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(1turn);
-            transform: translate(-50%, -50%) rotate(1turn);
+    margin-right: 0px;
+  }
+}
+@keyframes reverseAnimation {
+  0% {
+    margin-right: 58px;
+  }
+  100% {
+    margin-right: 0px;
   }
 }
 
-@keyframes spinner {
+@-webkit-keyframes animation {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0turn);
-            transform: translate(-50%, -50%) rotate(0turn);
+    margin-right: 0px;
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(1turn);
-            transform: translate(-50%, -50%) rotate(1turn);
+    margin-right: 58px;
   }
 }
 
-@-webkit-keyframes main {
+@keyframes animation {
   0% {
-    opacity: 0.1;
-  }
-  90% {
-    opacity: 0.1;
+    margin-right: 0px;
   }
   100% {
-    opacity: 1;
+    margin-right: 58px;
   }
 }
 
-@keyframes main {
+@-webkit-keyframes turn {
   0% {
-    opacity: 0.1;
-  }
-  90% {
-    opacity: 0.1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    opacity: 1;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
 
+@keyframes turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+/*** appearance keyframe ***/
+@-webkit-keyframes appearance {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes appearance {
+  0% {
+    opacity: 0%;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    opacity: 100%;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+/*** heart keyframe ***/
 @-webkit-keyframes heart__color {
   0% {
     -webkit-transform: scale(0);
@@ -129,7 +183,6 @@ button span {
             transform: scale(1);
   }
 }
-
 @keyframes heart__color {
   0% {
     -webkit-transform: scale(0);
@@ -163,14 +216,50 @@ button span {
   }
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("police/Roboto-Regular.ttf");
+/*** spinner keyframe ***/
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0turn);
+            transform: translate(-50%, -50%) rotate(0turn);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(1turn);
+            transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0turn);
+            transform: translate(-50%, -50%) rotate(0turn);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(1turn);
+            transform: translate(-50%, -50%) rotate(1turn);
+  }
 }
 
-@font-face {
-  font-family: "Roboto-Thin";
-  src: url(police/Roboto-Thin.ttf);
+@-webkit-keyframes main {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .error {
