@@ -41,21 +41,7 @@ table {
 
 /*variables de couleurs*/
 /*box shadow btn acceuil*/
-@font-face {
-  font-family: "Roboto";
-  src: url(/police/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Roboto-Thin";
-  src: url(/police/Roboto-Thin.ttf);
-}
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url(../../police/Shrikhand-Regular.ttf);
-}
-
+/*@import"../base/polices";*/
 footer {
   background-color: #353535;
   color: white;
@@ -384,7 +370,7 @@ header .logo img {
 }
 
 section {
-  font-family: Roboto;
+  font-family: 'Roboto';
   height: 100%;
   border-radius: 40px 40px 0px 0px;
   background: #f6f6f6;
@@ -417,7 +403,7 @@ section {
 }
 
 .menu__header h2 {
-  font-family: Shrikhand;
+  font-family: 'Shrikhand';
   font-size: 28px;
   padding-left: 20px;
 }
@@ -506,7 +492,7 @@ section {
 }
 
 .menu__btn {
-  font-family: Roboto , sans-serif;
+  font-family: 'Roboto' , sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,7 +530,8 @@ section {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-family: Roboto-Thin, sans-serif;
+  font-family: 'Roboto';
+  font-weight: 100;
   display: block;
   font-size: 15px;
   margin-top: 6px;
