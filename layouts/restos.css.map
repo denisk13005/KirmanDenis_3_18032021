@@ -5,7 +5,7 @@
         "restos.scss",
         "../base/_reset.scss",
         "../utils/_variables.scss",
-        "../base/_footer.scss",
+        "_footer.scss",
         "../utils/_btnAcceuil.scss",
         "../utils/_btnGradient.scss",
         "../utils/_variables.scss",
