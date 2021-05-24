@@ -247,11 +247,13 @@ button span {
   }
 }
 
+/*** page 404 ***/
 .error {
   width: 100%;
   height: 100vh;
 }
 
+/*** LOADING SPINNER ***/
 .spinner {
   background-color: #9356DC;
   width: 10px;
@@ -277,8 +279,6 @@ button span {
   border: 4px solid transparent;
   border-top: 4px solid #99E2D0;
   border-bottom: 4px solid #FF79DA;
-  -webkit-transform: scale(0);
-          transform: scale(0);
   -webkit-animation: spinner 0.7s ease-in-out 3 alternate;
           animation: spinner 0.7s ease-in-out 3 alternate;
 }
