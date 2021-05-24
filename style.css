@@ -63,8 +63,8 @@ button:hover {
   opacity: 0.85;
   -webkit-transform: scale(1.001);
           transform: scale(1.001);
-  -webkit-box-shadow: 2px 2px 10px black;
-          box-shadow: 2px 2px 10px black;
+  -webkit-box-shadow: 4px 4px 8px black;
+          box-shadow: 4px 4px 8px black;
 }
 
 button span {
