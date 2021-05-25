@@ -298,6 +298,8 @@ footer p {
 }*/
 body {
   background-color: #f6f6f6;
+  max-width: 1440px;
+  margin: auto;
 }
 
 header {
@@ -355,8 +357,8 @@ header .logo img {
 
 @media (min-width: 600px) {
   .picture img {
-    -o-object-fit: fill;
-       object-fit: fill;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
