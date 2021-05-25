@@ -56,6 +56,10 @@
     0%{transform: translate(-50%,-50%) rotate(0turn);}   
     100%{transform:translate(-50%, -50%) rotate(1turn) ;}
 }
+
+/*** apparition progressive de la page ***/
+
+
 @keyframes main{
     0%{opacity: 0;}    
     65%{ opacity: 0.1;}

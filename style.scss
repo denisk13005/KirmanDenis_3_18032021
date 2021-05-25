@@ -87,7 +87,7 @@ main{
     flex-direction: column;
     align-items: center;
     height: 285px;
-    background-color: #f6f6f6;
+    background-color: $color-background;
     h1{        
         text-align: center;
         font-weight: bold;
@@ -125,14 +125,10 @@ main{
         font-size: 23.5px;
         font-weight:bold;
     }
-    .operation__btn{
-        display: flex;
-        align-items: center;
-        margin: auto;
-    }
+  
 
 }
-.operation__btns{
+.operation__btns{    
     display: flex;
     flex-direction: column;
     margin-top: 31px;
@@ -164,7 +160,7 @@ main{
 .operation__icone{    
     margin-left: 36px;  
     i{
-        color:#7e7e7e ;
+        color: $color-icone ;
     }
     &--tel{
         font-size: 21px;
@@ -212,7 +208,7 @@ main{
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6 ;
+    background-color: $color-background;
     margin-top: 68px;
     &__container{
         display: flex;

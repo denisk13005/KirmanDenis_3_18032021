@@ -223,6 +223,7 @@ button span {
   }
 }
 
+/*** apparition progressive de la page ***/
 @-webkit-keyframes main {
   0% {
     opacity: 0;
@@ -234,7 +235,6 @@ button span {
     opacity: 1;
   }
 }
-
 @keyframes main {
   0% {
     opacity: 0;
@@ -432,16 +432,6 @@ main {
   font-weight: bold;
 }
 
-.operation .operation__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-}
-
 .operation__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,9 +463,16 @@ main {
   -webkit-box-shadow: 2px 2px 10px dimgray;
           box-shadow: 2px 2px 10px dimgray;
   border: none;
+  margin: auto;
   margin-bottom: 22px;
   position: relative;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .operation__btns .operation__btn:hover {

@@ -223,6 +223,7 @@ button span {
   }
 }
 
+/*** apparition progressive de la page ***/
 @-webkit-keyframes main {
   0% {
     opacity: 0;
@@ -234,7 +235,6 @@ button span {
     opacity: 1;
   }
 }
-
 @keyframes main {
   0% {
     opacity: 0;
