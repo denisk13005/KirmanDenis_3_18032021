@@ -211,8 +211,27 @@ main{
     background-color: $color-background;
     margin-top: 68px;
     &__container{
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;   
+        @media(min-width:1000px){
+            display: flex;
+        }   
+        &--1{
+            margin: auto;
+            @media(min-width: 1400px){
+                display: flex;
+                width: 50%;
+
+            }
+        }
+        &--2{
+            margin: auto;
+            @media(min-width: 1400px){
+                display: flex;
+                width: 50%;
+
+            }
+        }
     }
     a{
         text-decoration: none;

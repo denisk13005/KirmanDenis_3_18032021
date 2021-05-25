@@ -561,11 +561,42 @@ main {
 }
 
 .restaurants__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .restaurants__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.restaurants__container--1 {
+  margin: auto;
+}
+
+@media (min-width: 1400px) {
+  .restaurants__container--1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+}
+
+.restaurants__container--2 {
+  margin: auto;
+}
+
+@media (min-width: 1400px) {
+  .restaurants__container--2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
 }
 
 .restaurants a {
