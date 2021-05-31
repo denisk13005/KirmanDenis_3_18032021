@@ -521,6 +521,13 @@ section {
   font-size: 18px;
 }
 
+@media (max-width: 420px) {
+  .menu__btn--title h3 {
+    font-size: 15.2px;
+    font-weight: 400;
+  }
+}
+
 .menu__btn--title h3 span {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -532,6 +539,13 @@ section {
   margin-top: 6px;
   margin-left: 2px;
   padding-bottom: 2px;
+}
+
+@media (max-width: 420px) {
+  .menu__btn--title h3 span {
+    font-size: 12.5px;
+    font-weight: 300;
+  }
 }
 
 .menu__btn:hover > .menu__btn--title > .menu__btn--price {

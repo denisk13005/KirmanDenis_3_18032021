@@ -164,7 +164,11 @@ section{
             overflow: hidden;
             margin-top: 15px;
             margin-left: 10px;
-            font-size: 18px;            
+            font-size: 18px; 
+            @media(max-width: 420px){
+                font-size: 15.2px;
+                font-weight: 400;
+            }           
             span{
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -176,6 +180,10 @@ section{
                 margin-top: 6px;
                 margin-left: 2px;
                 padding-bottom: 2px;
+                @media(max-width: 420px){
+                    font-size: 12.5px;
+                    font-weight: 300;
+                }
             }
         }
         
