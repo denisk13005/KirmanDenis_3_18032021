@@ -260,6 +260,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'Roboto';
+  font-weight: 100;
 }
 
 footer svg {
